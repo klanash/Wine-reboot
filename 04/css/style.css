@@ -1,0 +1,49 @@
+/*CSS*/
+
+@import url('reset.css');
+
+
+#container{
+  overflow: hidden;
+  width: 320px;
+  height: 600px;
+  border: 1px solid black;
+  margin: 20px auto;
+}
+.swipe{
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  background: blue;
+  color: white;
+  padding: 10px;
+}
+
+#supprimer{
+  top: 0;
+  right: 0;
+  transition: .2s linear;
+  transform: translateX(150px);
+  -webkit-transition: .2s linear;
+  -webkit-transform: translateX(150px);
+}
+
+
+#bouton{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background: black;
+  color: white;
+  transition: .2s linear;
+  webkit-transition: .2s linear;
+  padding: 10px;
+}
+
+#bouton p{
+
+  margin: 15px 0 0 5px;
+
+}
+
+

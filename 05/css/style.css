@@ -1,0 +1,73 @@
+/*CSS*/
+
+@import url('reset.css');
+
+
+#container{
+	overflow: hidden;
+	position: relative;
+	border: 1px solid black;
+	width: 320px;
+	height: 600px;
+	margin: 20px auto;
+}
+
+
+
+
+.content{
+	color: white;
+	position: absolute;
+	width: 100%;
+	top: 30px;
+	left: 0;
+}
+
+#bouton1Content{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	z-index: -99999;
+	background: black;
+	transition: .2s linear;
+}
+
+p{
+	padding: 10px;
+}
+
+#bouton2Content{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	z-index: 99999;
+	transform:translateX(100%);
+	background: #777;
+	transition: .2s linear;
+}
+
+#buton1{
+	border: none;
+	outline: none;
+	float: left;
+	width: 160px;
+	height: 30px;
+	background: black;
+	color: white;
+	border-bottom: 3px solid #fff;
+
+}
+
+#buton2{
+	border: none;
+	outline: none;
+	color: white;
+	float: left;
+	width: 160px;
+	height: 30px;
+	background: #777;
+}
+
+
+
+
+
+
