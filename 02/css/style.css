@@ -58,20 +58,45 @@ header{
 
 #barre{
 
-	background: green;
+	background: black;
 	width: 400px;
-	height: 50px;
-	display: none;
+	height: 0px;
+	overflow:hidden;
+	-webkit-transition: .5s;
+
 }
+
+button {
+	border: 0;
+	padding: 0;
+
+}
+
+
+#barre.anim{
+	
+	height: 65px;
+  	-webkit-animation: mymove 1.7s;
+
+}
+
+
+
+
+@-webkit-keyframes mymove {
+	0%   {height: 0;}
+	50%  {height: 70px;}
+	80% {height: 65px;}
+} 
 
 
 #buton1{
 	float: left;
 	width: 160px;
-	height: 30px;
+	height: 40px;
 	background: black;
 	position: relative;
-	border-right: 1px solid white;
+
 	
 
 }
@@ -84,7 +109,7 @@ header{
 	width: 40px;
 	display: block;
 	position: absolute;
-	top: 5px;
+	top: 10px;
 	left: 65px;
 
 }
@@ -92,7 +117,7 @@ header{
 #buton2{
 	float: left;
 	width: 160px;
-	height: 30px;
+	height: 40px;
 	background: black;
 	position: relative;
 }
@@ -105,7 +130,7 @@ header{
 	width: 40px;
 	display: block;
 	position: absolute;
-	top: 5px;
+	top: 10px;
 	left: 75px;
 
 }
@@ -145,7 +170,7 @@ p{
 	height: 500px;
 	display: block;
 	background: grey;
-	margin-top: 100px;
+	margin-top: 105px;
 	transform: translateX(-100%);
 	-webkit-transform: translateX(-100%);
 	transition: .5s linear; 

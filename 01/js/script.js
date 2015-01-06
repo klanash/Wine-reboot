@@ -1,8 +1,10 @@
 
 $("#recherche").click(function () {
-  if ( $( "#barre" ).is( ":hidden" ) ) {
-    $( "#barre" ).slideDown( "slow" );
-  } else {
-    $( "#barre" ).slideUp();
+  if($("#barre").hasClass("anim"))
+  {
+  	$("#barre").removeClass("anim");
+  }else
+  {
+  	$("#barre").addClass("anim");
   }
 });
